@@ -1,0 +1,462 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(3, 32, 47);
+    color: white;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    font-size: 18px;
+    padding-top: 25px;
+}
+
+a {
+    margin-right: 4%;
+    text-decoration: none;
+    color: white;
+    font-family: "Comfortaa", sans-serif;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+a:active {
+    opacity: 0.5;
+}
+
+.container {
+    display: grid;
+    padding-top: 13%;
+    line-height: 0px;
+    margin-left: 14%;
+    width: 55%;
+}
+
+.introduction-p {
+    font-size: 20px;
+    font-family: "Comfortaa", sans-serif;
+    margin-bottom: 0;
+    padding-left: 8px;
+    animation: slideFromTop 1s ease-out forwards;
+}
+
+@keyframes slideFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-90px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.name-p {
+    font-size: 6em;
+    margin-top: 1em;
+    margin-bottom: 0;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    color: rgb(131, 192, 236);
+    animation: slideFromLeft 1s ease-out forwards;
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.description-p {
+    margin-top: 3em;
+    padding-left: 8px;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: "Assistant", sans-serif;
+    color: white;
+}
+
+.about-container, .education-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+}
+
+.about-style, .education-style {
+    max-width: 50%; 
+    height: 55%;
+    padding: 50px 30px 50px 30px;
+    text-align: left;
+    box-shadow: -1px 2px 25px rgb(131, 192, 236);
+}
+
+.about-title, .education-title, .contact-title {
+    font-size: 40px;
+    font-family: "Comfortaa", sans-serif;
+    color: white;
+}
+
+.about-description {
+    font-size: 20px;
+    font-family: "Assistant", sans-serif;
+    color: white;
+    line-height: 30px;
+}
+
+.inline-style {
+    color: rgb(131, 192, 236);
+}
+
+
+  
+
+.study-paragraph {
+    margin-top: 15px;
+    font-size: 17px;
+    color: rgb(131, 192, 236);
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+}
+
+.university-name-style {
+    font-size: 22px;
+    font-family: "Assistant", sans-serif;
+    color: white;
+}
+
+.date-of-studies {
+    font-size: 15px;
+    color: white;
+}
+
+.study-description {
+    font-size: 20px;
+    font-family: "Assistant", sans-serif;
+    color: white;
+}
+
+.projects-style {
+    margin-top: 280px;
+    margin-left: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    width: 1380px;
+    row-gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1px;
+    
+}
+
+
+.projects-title {
+    font-size: 40px;
+    font-family: "Comfortaa", sans-serif;
+    color: white;
+    padding-top: 50px;
+    padding-left: 90px;
+}
+
+.project-container {
+    width: 1300px;
+    height: 480px;
+    position: relative;
+    padding-left: 90px;
+}
+
+
+
+.project-title {
+    font-size: 20px;
+    font-family: "Comfortaa", sans-serif;
+    color: white;
+}
+
+.project-image {
+    position: absolute;
+}
+
+.project1-image {
+    width: 700px;
+}
+
+.project-description {
+    position: absolute;
+    right: 0;
+    top: 180px;
+    left: 790px;
+    width: 500px;
+    font-size: 18px;
+    font-family: "Assistant", sans-serif;
+    color: white;
+    text-align: right;
+    padding: 10px;
+    padding-left: 60px;
+    background-color: rgb(8, 60, 84);
+}
+
+.project-technologies {
+    font-size: 15px;
+    font-family: "Comfortaa", sans-serif;
+    color: rgb(131, 192, 236);
+    position: absolute;
+    top: 320px;
+    right: 30px;
+    word-spacing: 45px;
+}
+
+.word-spacing-design {
+    word-spacing: 1px;
+}
+
+.project3-technologies {
+    top: 295px;
+}
+
+
+
+.project4-technologies, .project2-technologies {
+    top: 270px;
+}
+
+.project1-technologies {
+    top: 290px;
+}
+
+.project3-image {
+    border: 1px solid white;
+}
+
+
+.contact-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contact-container, form {
+    width: 600px;
+    text-align: center;
+}
+
+form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.field .input {
+    width: 100%;
+    padding: 18px;
+    padding-right: 40px;
+    border: none;
+    box-shadow: -1px 2px 15px rgb(131, 192, 236);
+    font-size: 15px;
+    margin: 15px 0;
+    background-color: rgb(3, 32, 47);
+    color: white;
+}
+
+.field.error .input {
+    border-color: rgb(232, 80, 80);
+}
+
+.field .input::placeholder {
+    font-family: "Assistant", sans-serif;
+    font-size: 18px;
+}
+
+form .textarea-field, .input {
+    resize: none;
+}
+
+.field .error-txt {
+    font-size: 15px;
+    color: rgb(232, 80, 80);
+    text-align: left;
+    margin: -5px 0;
+    display: none;
+}
+
+
+
+form button {
+    padding: 18px 40px;
+    margin-left: 35px;
+    background-color: white;
+    border: none;
+    box-shadow: -1px 2px 15px rgb(131, 192, 236);
+    font-size: 18px;
+    color: rgb(3, 32, 47);
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: "Assistant", sans-serif;
+    letter-spacing: 2px;
+}
+
+form button:hover {
+    box-shadow: none;
+}
+
+form button:active {
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1180px) {
+    .name-p {
+        display: flex;
+        flex-direction: column;
+        gap: 90px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        position: static;
+        height: 10%; 
+    }
+    nav {
+        padding: 3%;
+        font-size: 12px;
+    }
+
+    .container {
+        margin-left: 8%;
+        
+    }
+    .name-p {
+        display: flex;
+        flex-direction: column;
+        gap: 90px;
+    }
+
+    .about-style, .education-style, .projects-style {
+        max-width: 80%; 
+        height: 45%;
+        padding: 30px;
+        
+    }
+   
+    
+    .about-description{
+        line-height: 17px;
+        font-size: 15px;
+    }
+
+    .study-paragraph {
+        font-size: 15px;
+        
+    }
+
+    .university-name-style, .study-description{
+        font-size: 15px;
+    }
+
+
+   
+    .project-container {
+        width: 90%;
+    }
+    
+
+    .projects-style {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        row-gap: 30px;
+        
+    }
+
+    .project-title {
+        position: absolute;
+        left: 12px;
+        bottom: 480px;
+    }
+
+    .project-image {
+        position: absolute;
+        left: 12px;
+    }
+    
+    .project1-image {
+        width: 370px;
+    }
+
+    .project-title,
+    .project-description,
+    .project-technologies {
+        padding: 0;
+        font-size: 12px;
+    }
+
+    .project-description {
+        left: 12px;
+        width: 370px;
+        text-align: left;
+    }
+
+    .project-technologies {
+        left: 12px;
+        top: 240px;
+        font-size: 10px;
+    }
+
+    .contact-container,
+    form {
+        width: 80%; 
+        margin: 0 auto;
+        margin-left: 15px; 
+        padding: 10px; 
+    }
+
+    form .input-box {
+        flex-direction: column; 
+    }
+
+    .field .input {
+        width: calc(100% - 20px); 
+    }
+
+    form button {
+        margin-top: 20px;
+        margin-left: 30px; 
+        margin-bottom: 150px;
+    }
+  
+    }
+
+   
+
+    
+    
+   
