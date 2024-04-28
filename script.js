@@ -19,7 +19,7 @@ function sendEmail() {
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "portfoliowebsite79@gmail.com",
-        Password : "7D8AF19F18AF86ACC39645CF2F542B0E2A63",
+        Password : "*****",
         To : 'portfoliowebsite79@gmail.com',
         From : 'portfoliowebsite79@gmail.com',
         Subject : `${subject.value}`,
