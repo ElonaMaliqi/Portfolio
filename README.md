@@ -1,5 +1,5 @@
 ## Description
-Built from the ground up with **HTML**, **CSS**, and **JavaScript**, this website is a reflection of my creative and technical abilities. It acts as a central platform for showcasing my projects and highlighting my skills.
+This is a website crafted from scratch using **HTML**, **CSS**, and **JavaScript**, serving as a testament of my creative and technical abilities. It acts as a central platform for showcasing my projects and highlighting my skills. Through intuitive design, visitors can explore my portfolio and gain insight into my diverse skill set.
 
 * Demo: https://portfolio-elone-maliqi.netlify.app
 
