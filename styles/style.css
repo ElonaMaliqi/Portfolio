@@ -328,15 +328,57 @@ form button:active {
 
 
 
+@media screen and (max-width: 1280px) {
 
-
-@media screen and (max-width: 1180px) {
     .name-p {
         display: flex;
         flex-direction: column;
         gap: 90px;
     }
+
+    .about-style, .education-style, .projects-style {
+        max-width: 80%; 
+        height: 55%;
+        padding: 30px;
+        
+    }
+
+    .projects-style {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        row-gap: 100px;
+    }
+
+    .project-image {
+        position: relative;
+        width: 100%;
+    }
+
+    .project-title,
+    .project-description,
+    .project-technologies {
+        padding: 0;
+        font-size: 1.7vw; 
+    }
+
+    .project-description {
+        left: 6.4%; 
+        top: 85%; 
+        width: 50.5%;
+        text-align: left;
+    }
+
+    .project-technologies {
+        left: 6.4%; 
+        top: 105%; 
+        font-size: 1.5vw; 
+    }
 }
+
+
 
 @media screen and (max-width: 768px) {
     header {
