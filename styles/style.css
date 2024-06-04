@@ -1,31 +1,32 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: rgb(3, 32, 47);
     color: white;
-    box-sizing: border-box;
 }
 
 header {
     position: fixed;
-    top: 0;
+    background-color: rgb(3, 32, 47);
     width: 100%;
-    height: 60px;;
-    z-index: 999;
+    z-index: 1000;
 }
 
 nav {
-    display: flex;
-    justify-content: end;
+    padding: 20px;
     font-size: 18px;
-    padding-top: 25px;
+    text-align: end;
 }
 
-a {
-    margin-right: 4%;
-    text-decoration: none;
-    color: white;
+nav a {
     font-family: "Comfortaa", sans-serif;
+    padding: 20px;
+    color: white;
 }
 
 a:hover {
@@ -36,19 +37,36 @@ a:active {
     opacity: 0.5;
 }
 
-.container {
-    display: grid;
-    padding-top: 13%;
-    line-height: 0px;
-    margin-left: 14%;
-    width: 55%;
+.burger-menu {
+    display: none;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px;
 }
+
+.burger-menu:hover {
+    opacity: 0.7;
+}
+
+.burger-menu:active {
+    opacity: 0.5;
+}
+
+
+.container {
+   max-width: 100%;
+   padding: 180px 150px;
+}
+
+.introduction-p, .name-p, .description-p {
+    max-width: 70%;
+    margin: 15px;
+}
+
 
 .introduction-p {
     font-size: 20px;
     font-family: "Comfortaa", sans-serif;
-    margin-bottom: 0;
-    padding-left: 8px;
     animation: slideFromTop 1s ease-out forwards;
 }
 
@@ -64,9 +82,8 @@ a:active {
 }
 
 .name-p {
-    font-size: 6em;
-    margin-top: 1em;
-    margin-bottom: 0;
+    font-size: 90px;
+    margin-left: 3px;
     font-family: "Comfortaa", sans-serif;
     font-weight: bold;
     color: rgb(131, 192, 236);
@@ -83,29 +100,27 @@ a:active {
 }
 
 .description-p {
-    margin-top: 3em;
-    padding-left: 8px;
     line-height: 30px;
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Assistant", sans-serif;
     color: white;
 }
 
-.about-container, .education-container {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15%;
+
+.about-container {
+    padding-top: 145px;
+}
+
+.education-container {
+    padding-top: 230px;
 }
 
 .about-style, .education-style {
-    max-width: 50%; 
-    height: 55%;
-    padding: 50px 30px 50px 30px;
     text-align: left;
     box-shadow: -1px 2px 25px rgb(131, 192, 236);
+    margin: 0px auto;
+    max-width: 55%;
+    padding: 50px 30px;
 }
 
 .about-title, .education-title, .contact-title {
@@ -125,11 +140,7 @@ a:active {
     color: rgb(131, 192, 236);
 }
 
-
-  
-
 .study-paragraph {
-    margin-top: 15px;
     font-size: 17px;
     color: rgb(131, 192, 236);
     font-family: "Comfortaa", sans-serif;
@@ -139,32 +150,40 @@ a:active {
 .university-name-style {
     font-size: 22px;
     font-family: "Assistant", sans-serif;
-    color: white;
+}
+
+.university-name-style a {
+    padding: 0;
 }
 
 .date-of-studies {
     font-size: 15px;
-    color: white;
 }
 
 .study-description {
     font-size: 20px;
     font-family: "Assistant", sans-serif;
-    color: white;
 }
 
-.projects-style {
-    margin-top: 280px;
-    margin-left: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 40px;
-    width: 1380px;
-    row-gap: 30px;
+.project-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.image-description {
     display: grid;
-    grid-template-columns: 1fr;
-    column-gap: 1px;
-    
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+.project-image {
+    width: 100%;
+}
+
+.project1-image {
+    max-width: 100%;
 }
 
 
@@ -172,86 +191,56 @@ a:active {
     font-size: 40px;
     font-family: "Comfortaa", sans-serif;
     color: white;
-    padding-top: 50px;
-    padding-left: 90px;
+    width: 90%;
+    padding-top: 120px;
+    margin: 60px auto;
+    margin-top: 200px;
+    
 }
-
-.project-container {
-    width: 1300px;
-    height: 480px;
-    position: relative;
-    padding-left: 90px;
-}
-
-
 
 .project-title {
     font-size: 20px;
     font-family: "Comfortaa", sans-serif;
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
-.project-image {
-    position: absolute;
-}
-
-.project1-image {
-    width: 700px;
-}
-
-.project-description {
-    position: absolute;
-    right: 0;
-    top: 180px;
-    left: 790px;
-    width: 500px;
-    font-size: 18px;
-    font-family: "Assistant", sans-serif;
-    color: white;
-    text-align: right;
-    padding: 10px;
-    padding-left: 60px;
-    background-color: rgb(8, 60, 84);
-}
 
 .project-technologies {
     font-size: 15px;
     font-family: "Comfortaa", sans-serif;
     color: rgb(131, 192, 236);
-    position: absolute;
-    top: 320px;
-    right: 30px;
     word-spacing: 45px;
+    text-align: end;
+    padding-right: 15px;
+
 }
 
 .word-spacing-design {
     word-spacing: 1px;
 }
 
-.project3-technologies {
-    top: 295px;
+
+.project-description {
+    font-size: 18px;
+    font-family: "Assistant", sans-serif;
+    color: white;
+    padding: 15px;
+    background-color: rgb(8, 60, 84);
 }
 
-
-
-.project4-technologies, .project2-technologies {
-    top: 270px;
-}
-
-.project1-technologies {
-    top: 290px;
-}
 
 .project3-image {
     border: 1px solid white;
 }
 
-
 .contact-style {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    margin-top: 150px;
+    margin-bottom: 70px;
 }
 
 .contact-container, form {
@@ -267,7 +256,7 @@ form .input-box {
 .field .input {
     width: 100%;
     padding: 18px;
-    padding-right: 40px;
+    padding-right: 60px;
     border: none;
     box-shadow: -1px 2px 15px rgb(131, 192, 236);
     font-size: 15px;
@@ -276,9 +265,6 @@ form .input-box {
     color: white;
 }
 
-.field.error .input {
-    border-color: rgb(232, 80, 80);
-}
 
 .field .input::placeholder {
     font-family: "Assistant", sans-serif;
@@ -288,15 +274,6 @@ form .input-box {
 form .textarea-field, .input {
     resize: none;
 }
-
-.field .error-txt {
-    font-size: 15px;
-    color: rgb(232, 80, 80);
-    text-align: left;
-    margin: -5px 0;
-    display: none;
-}
-
 
 
 form button {
@@ -324,161 +301,91 @@ form button:active {
 
 
 
-
-
-
-
-@media screen and (max-width: 1280px) {
-
-    .name-p {
-        display: flex;
-        flex-direction: column;
-        gap: 90px;
-    }
-
-    .about-style, .education-style, .projects-style {
-        max-width: 80%; 
-        height: 55%;
-        padding: 30px;
-        
-    }
-
-    .projects-style {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        row-gap: 100px;
-    }
-
-    .project-image {
-        position: relative;
-        width: 100%;
-    }
-
-    .project-title,
+@media (max-width: 800px) {
     .project-description,
     .project-technologies {
-        padding: 0;
-        font-size: 1.7vw; 
-    }
-
-    .project-description {
-        left: 6.4%; 
-        top: 85%; 
-        width: 50.5%;
-        text-align: left;
-    }
-
-    .project-technologies {
-        left: 6.4%; 
-        top: 105%; 
-        font-size: 1.5vw; 
+        text-align: center;
+        padding: 8px;
+        max-width:100%;
+        margin: 0 auto;
+        font-size: 14px;
     }
 }
 
-
-
-@media screen and (max-width: 768px) {
-    header {
-        position: static;
-        height: 10%; 
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
     }
-    nav {
-        padding: 3%;
-        font-size: 12px;
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+        background-color: rgb(3, 32, 47);
     }
 
     .container {
-        margin-left: 8%;
-        
-    }
-    .name-p {
-        display: flex;
-        flex-direction: column;
-        gap: 90px;
+        padding: 180px 20px;
+     }
+
+     .name-p {
+        font-size: 70px;
     }
 
-    .about-style, .education-style, .projects-style {
-        max-width: 80%; 
-        height: 45%;
-        padding: 30px;
-        
-    }
-   
-    
-    .about-description{
-        line-height: 17px;
-        font-size: 15px;
-    }
+     .about-style, .education-style {
+        max-width: 90%;
+     }
 
-    .study-paragraph {
-        font-size: 15px;
-        
-    }
-
-    .university-name-style, .study-description{
-        font-size: 15px;
-    }
-
-
-   
-    .project-container {
-        width: 90%;
+     .about-title, .education-title, .contact-title, .projects-title {
+        font-size: 32px;
     }
     
-
-    .projects-style {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        row-gap: 30px;
-        
+    .about-description, .study-description {
+        font-size: 16px;
+        line-height: 20px;
     }
 
-    .project-title {
-        position: absolute;
-        left: 12px;
-        bottom: 480px;
+    .study-paragraph , .university-name-style, .inline-style {
+        font-size: 16px;
     }
 
-    .project-image {
-        position: absolute;
-        left: 12px;
+    .image-description {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
     }
     
-    .project1-image {
-        width: 370px;
-    }
-
-    .project-title,
-    .project-description,
-    .project-technologies {
-        padding: 0;
-        font-size: 12px;
-    }
 
     .project-description {
-        left: 12px;
-        width: 370px;
+        text-align: center;
+        padding: 5px;
+        max-width:100%;
+        margin: 0 auto;
+        font-size: 14px;
         text-align: left;
     }
 
     .project-technologies {
-        left: 12px;
-        top: 240px;
-        font-size: 10px;
+        font-size: 12px;
+        padding:6px;
+        word-spacing: 20px;
+        text-align: left;
+    }
+    
+    .project-title {
+        font-size: 15px;
     }
 
     .contact-container,
     form {
-        width: 80%; 
+        width: 90%; 
         margin: 0 auto;
-        margin-left: 15px; 
-        padding: 10px; 
+        padding: 0px; 
     }
 
     form .input-box {
@@ -490,15 +397,8 @@ form button:active {
     }
 
     form button {
-        margin-top: 20px;
-        margin-left: 30px; 
-        margin-bottom: 150px;
-    }
-  
+        padding: 10px 25px;
+        font-size: 16px;
     }
 
-   
-
-    
-    
-   
+}
